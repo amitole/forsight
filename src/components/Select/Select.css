@@ -1,0 +1,135 @@
+.select-container {
+  position: relative;
+  width: 250px;
+  font-family: Arial, sans-serif;
+}
+
+.select-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  background: #fff;
+  cursor: pointer;
+  min-height: 38px;
+  transition: border 0.2s;
+}
+
+.select-control.open {
+  border-color: #007bff;
+}
+
+.select-placeholder {
+  color: #888;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.select-arrow {
+  margin-left: 8px;
+  transition: transform 0.2s;
+}
+
+.select-arrow.up {
+  transform: rotate(180deg);
+}
+
+.select-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 10;
+  margin-top: 2px;
+  padding: 8px 0;
+}
+
+.select-search-container {
+  position: relative;
+  margin: 0 5%;
+  margin-bottom: 8px;
+}
+
+.select-search {
+  width: 100%;
+  padding: 6px 8px;
+  padding-right: 28px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.select-search-clear {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 2px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.select-search-clear:hover {
+  background-color: #f0f0f0;
+}
+
+.select-all-option {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 500;
+  background: #f7f7f7;
+  border-bottom: 1px solid #eee;
+}
+
+.select-all-option input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.select-options {
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.select-option {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.select-option.selected {
+  background: #e6f0ff;
+}
+
+.select-option:hover {
+  background: #f0f4fa;
+}
+
+.select-option input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.select-no-options {
+  padding: 8px 12px;
+  color: #888;
+  text-align: center;
+} 
